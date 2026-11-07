@@ -1,0 +1,7 @@
+vmlinux.h
+*.o
+guard
+guard.skel.h
+*.log
+signal_test
+signal_test
