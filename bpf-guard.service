@@ -1,0 +1,16 @@
+[Unit]
+Description=eBPF rootkit guard
+DefaultDependencies=no
+After=sysinit.target
+Before=basic.target
+
+[Service]
+Type=simple
+ExecStart=/home/chayim/BPF-Guard/guard
+Restart=always
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=sysinit.target
